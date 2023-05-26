@@ -1,3 +1,29 @@
 .App {
     text-align: center;
 }
+
+.Nav {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Nav ul {
+    list-style-type: none;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.Nav ul li {
+    padding: 20px;
+}
+
+.Nav ul li a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.Nav ul li a {
+    text-decoration: none;
+}
