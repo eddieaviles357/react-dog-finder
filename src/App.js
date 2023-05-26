@@ -1,18 +1,13 @@
 import './App.css';
 import Routes from './components/Routes';
-import Nav from './components/Nav';
+import DOGS from './dogs';
 
-const whiskey = 'https://cdn.pixabay.com/photo/2016/10/10/14/13/dog-1728494_1280.png';
-const duke = 'https://cdn.pixabay.com/photo/2015/11/17/13/13/bulldog-1047518_1280.jpg';
-const perry = 'https://cdn.pixabay.com/photo/2012/05/07/13/41/dog-48490_1280.png';
-const tubby = 'https://cdn.pixabay.com/photo/2018/05/26/18/06/dog-3431913_1280.jpg';
+const { whiskey, duke, perry, tubby } = DOGS;
 
 function App(props) {
-  console.log(props)
   return (
     <div className="App">
-      <Nav />
-      <Routes />
+      <Routes dogs={props.dogs}/>
     </div>
   );
 }
