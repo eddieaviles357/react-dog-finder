@@ -9,9 +9,15 @@
     align-items: center;
 }
 
-.Nav ul {
-    list-style-type: none;
+ul {
+    list-style: none;
+}
 
+hr {
+    width: 500px;
+}
+
+.Nav ul {
     display: flex;
     justify-content: space-around;
 }
@@ -26,4 +32,8 @@
 
 .Nav ul li a {
     text-decoration: none;
+}
+
+.img {
+    width: 500px;
 }
